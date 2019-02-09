@@ -1,0 +1,30 @@
+cd bomb39
+gdb bomb
+break explode_bomb
+run
+
+I can see Russia from my house!
+0 1 3 6 10 15
+0 883
+
+cmp $0x1,%eax
+cmpl $0x7,(%rsp)
+ja
+cmpl $0x5,(%rsp)
+jg
+cmp 0x4(%rsp),%eax
+
+
+0 123 일때
+($rsp) 4198501
+0x4($rsp) 0
+0x8($rsp) 0
+$eax 883
+
+6 0 일때
+($rsp) 4198501
+0x4($rsp) 0
+0x8($rsp) 6
+$eax 0 
+
+ 
